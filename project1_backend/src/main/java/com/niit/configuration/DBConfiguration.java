@@ -24,7 +24,7 @@ public class DBConfiguration {
 	public DataSource dataSource() {
 	    BasicDataSource dataSource = new BasicDataSource();
 	    dataSource.setDriverClassName("org.h2.Driver");
-	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/skart");
+	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/ikart");
 	    dataSource.setUsername("sa");
 	    dataSource.setPassword("");
 	    return dataSource;

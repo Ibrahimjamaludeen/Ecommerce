@@ -15,7 +15,20 @@
   </properties>
 
   <dependencies>
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>4.2.4.RELEASE</version>
+    </dependency>
+   <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
   <!-- Database ORM - hibernate ORM framework -->
+
+  
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
@@ -24,6 +37,11 @@
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
+    <version>4.3.2.RELEASE</version>
+    </dependency>
+    <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
     <version>4.3.2.RELEASE</version>
     </dependency>
     <dependency>
@@ -40,9 +58,8 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.195</version>
+            <version>1.4.191</version>
         </dependency>
-  
 <dependency>
     <groupId>commons-pool</groupId>
     <artifactId>commons-pool</artifactId>
@@ -54,7 +71,33 @@
     <artifactId>commons-dbcp</artifactId>
     <version>1.4</version>
 </dependency>
-
+ <!-- For validation -->
+         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>4.2.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.0.0.GA</version>
+        </dependency>
+  <!-- Multipart file upload -->
+        <dependency>
+        <artifactId>commons-fileupload</artifactId>
+        <groupId>commons-fileupload</groupId>
+        <version>1.2.2</version>
+        </dependency>
+        <dependency>
+        <artifactId>commons-io</artifactId>
+        <groupId>commons-io</groupId>
+        <version>2.4</version>
+        </dependency>
+    <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>4.3.2.RELEASE</version>
+    </dependency>
   
   
     <dependency>
@@ -63,5 +106,32 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  
+  
+  <!--  Spring security jar files -->
+        
+        <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core</artifactId>
+        <version>4.1.2.RELEASE</version>
+        </dependency>
+        
+         <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-web</artifactId>
+        <version>4.1.2.RELEASE</version>
+        </dependency>
+        
+         <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-config</artifactId>
+        <version>4.1.2.RELEASE</version>
+        </dependency>
+        
+         <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-taglibs</artifactId>
+        <version>4.1.2.RELEASE</version>
+        </dependency>
   </dependencies>
 </project>
